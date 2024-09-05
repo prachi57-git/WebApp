@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: target/WebApp.war
+    destination: /var/lib/tomcat10/webapps/
+hooks:
+  AfterInstall:
+    - location: WebApp/restart_tomcat.sh
+      runas: root
+

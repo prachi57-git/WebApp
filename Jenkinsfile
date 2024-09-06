@@ -9,6 +9,11 @@ pipeline {
         APP_NAME = 'WebAppDeploy'      // Replace with your CodeDeploy application name
         DEPLOYMENT_GROUP = 'WebApp-DeploymentGroup' // Replace with your CodeDeploy deployment group name
     }
+    
+    tools {
+        Maven Installation 'Maven 3.9.9' // Use the name of the Maven installation from Global Tool Configuration
+    }
+
 
     stages {
         // 1. Checkout code from Git repository

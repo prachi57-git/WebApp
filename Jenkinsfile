@@ -11,7 +11,7 @@ pipeline {
     }
     
     tools {
-        maven 'Maven 3.9.9' // Use the name of the Maven installation from Global Tool Configuration
+        maven 'maven 3.8.7' // Use the name of the Maven installation from Global Tool Configuration
     }
 
 
